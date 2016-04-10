@@ -1,0 +1,23 @@
+#leftsidebar{
+  float: left;
+  padding: 20px 0 0 2px;
+  position: relative;
+  width: 179px;
+  background-color: #e9eaed;
+  height: 100%;
+
+}
+body{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.container-fluid{
+  background-color: #3b5998;
+}
+li{
+  color: #FFF;
+  margin-left: uneTailleDesMargesInterieursPlusGrande;
+    margin-right: uneTailleDesMargesInterieursPlusGrande;
+ padding: 9px;
+}
