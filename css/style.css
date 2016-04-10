@@ -7,6 +7,13 @@
   height: 100%;
 
 }
+.image{
+  padding: 0.5px;
+float: left;
+  margin: 5px;
+  width: 30px;
+}
+
 body{
   display: block;
   width: 100%;
@@ -14,10 +21,23 @@ body{
 }
 .container-fluid{
   background-color: #3b5998;
+  height: 40px;
 }
-li{
+.rech{
+  margin: 2%;
+  padding: 2%;
+  width: 400px;
+  height: 25px;
+}
+
+.litext{
   color: #FFF;
-  margin-left: uneTailleDesMargesInterieursPlusGrande;
-    margin-right: uneTailleDesMargesInterieursPlusGrande;
- padding: 9px;
+margin-left: 15px;
+ padding: 15px;
+}
+.liimg{
+  color: #FFF;
+  width: auto;
+  margin-left: 15px;
+
 }
