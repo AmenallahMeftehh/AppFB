@@ -1,12 +1,12 @@
 .sectionAcc{
-  margin-left: 100px;
+  margin-left: 30px;
   float: left;
   width: 500px;
   background-color: #fff;
   height: 200px;
 }
 .sectionAcc2{
-  margin-right: 200px;
+  margin-right: 300px;
   float: right;
   width: 280px;
   height: 304px;
@@ -14,7 +14,10 @@
 }
 h5{
   color: #2E2E2E;
+  padding-left: 10px;
 }
+
+.imageicon{}
 .image{
   padding: 0.5px;
 float: left;
@@ -40,6 +43,13 @@ float: left;
 }
 #div1{
   float: left;
+  width: 200px;
+}
+h6{
+  display: inline;
+  font-size: 20px;
+  font-family: sans-serif;
+  padding: 10px;
 }
 .litext{
   color: #FFF;
@@ -50,4 +60,9 @@ margin-left: 15px;
   color: #FFF;
   width: auto;
   margin-left: 15px;
+  padding-right: 50px;
+}
+.textarea{
+  margin-left: 10px;
+  margin-top: 20px;
 }
