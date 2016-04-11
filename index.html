@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title>FB</title>
+    <link rel="stylesheet" href="css/style.css"charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.css"charset="utf-8">
+    <link rel="icon" type="image/png" href="images\internet.png">
+    <!-- angular -->
+    <script src="lib/angular.js"></script>
+    <script src="lib/angular-route.js"></script>
+    <script src="app.js"></script>
+    <!-- controller -->
+    <script src="Controllers\userController.js"></script>
+    <!-- services -->
+    <script src="Services\userService.js"></script>
+
+    </script>
+  </head>
+  <header>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+      <div class="navbar-header">
+       <a class="navbar-brand" href="#"><a href="#"><img class="image" src="images\social (1).png" alt="" /></a>
+    </div>
+    <ul ul class="nav navbar-nav">
+      <li><input type="text" class="rech" placeholder="Cherchez des personnes, des lieux ou d'autres choses"></li>
+      <li class="litext"><a href="#profil">Profil</a></li>
+      <li class="litext"><a href="#accueil">Accueil</a></li>
+      <li ><a href="#"><img src="images/social.png" alt="" /></a></li>
+      <li ><a href="#"><img  src="images/shapes.png" alt="" /></a></li>
+      <li ><a href="#"><img  src="images/circle.png" alt="" /></a></li>
+      <li ><a href="#"><img src="images/cogwheel.png" alt="" /></a></li>
+    </ul>
+  </div>
+</nav>
+  </header>
+  <body>
+    <div ng-view>
+
+    </div>
+  </body>
+
+</html>
