@@ -2,18 +2,64 @@
 <img class="photo" ng-src="/images/profil/{{user.image}}" alt="" />
 
 </div>
+<div class="md-col-12">
+ <div class=" md-col-3">
+   <div class="photoinfo">
+     <h4><img src="images/globe.png">Informations</img></h4>
+     <div class="divligne">
+     </div>
+     <h5>{{user.nom}}</h5>
+     <h5>{{user.universite}}</h5>
+     <h5>{{user.age}}</h5>
+     <h5>{{user.situation}}</h5>
+   </div><br><br><br><br><br><br><br><br><br><br>
+  <div class="photoalbum ">
+    <h4><img src="images/technology11.png">Album</img></h4>
+    <div class="divligne">
+    </div>
+    <div class="col-md-4"ng-repeat="i in user.album">
+      <img class="imagephoto" ng-src="images/profil/{{i}}">
+    </div>
 
-<div ng-repeat="s in user.statut">
-  <section class="sectionAcc4">
-{{s}}
-<div class="divligne"></div>
-<div >
-  <a href="#"><img class="imagelike"src="../images/symbols.png" alt="" />J'aime</a>
-  <a style="padding-left:1em;" href="#"><img class="imagelike"src="../images/interface.png" alt="" />Commenter</a>
-</div>
-<div class="divligne"></div>
-<input type="text" style="margin-top:40px;width:450px;" placeholder="Votre commentaire"/>
-</div>
+  </div>
 
-</section>
+
+  </div>
+  <divclass="md-col-6">
+
+  <section class="sectionAcc">
+    <div >
+      <a href="#"><h6>Statut</h6></a>
+      <a href=""><h6>Ajouter une photo</h6></a>
+      <a href=""><h6>Album photo</h6></a>
+      <textarea ng-model="status" class="textarea" rows="4" cols="65"></textarea>
+    </div>
+    <div>
+      <button class="button1"type="submit" ng-click="addstatut(status)">Publier</button>
+      <div class="dropup">
+    <button style="float:right;margin-right:10px;background-color:white;" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Moi uniquement
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" >
+      <li><a href="#">Public</a></li>
+      <li><a href="#">Amis</a></li>
+      <li><a href="#">Amis des amis</a></li>
+    </ul>
+  </div>
+</section><br><br><br><br><br><br><br><br><br><br><br>
+  <div ng-repeat="s in user.statut" >
+    <section class="sectionAcc4">
+      {{s}}
+      <div class="divligne"></div>
+      <div >
+        <a href="#"><img class="imagelike"src="../images/symbols.png" alt="" />J'aime</a>
+        <a style="padding-left:1em;" href="#"><img class="imagelike"src="../images/interface.png" alt="" />Commenter</a>
+      </div>
+      <div class="divligne"></div>
+      <input type="text" style="margin-top:40px;width:450px;" placeholder="Votre commentaire"/>
+    </section>
+  </div>
+
+</div>
 </div>
