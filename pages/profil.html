@@ -1,6 +1,19 @@
-<div>
-<img ng-src="/images/profil{{user.image}}" alt="" />
+<div><h2 style="margin-left:50px">{{user.nom}}</h2>
+<img class="photo" ng-src="/images/profil/{{user.image}}" alt="" />
 
+</div>
 
+<div ng-repeat="s in user.statut">
+  <section class="sectionAcc4">
+{{s}}
+<div class="divligne"></div>
+<div >
+  <a href="#"><img class="imagelike"src="../images/symbols.png" alt="" />J'aime</a>
+  <a style="padding-left:1em;" href="#"><img class="imagelike"src="../images/interface.png" alt="" />Commenter</a>
+</div>
+<div class="divligne"></div>
+<input type="text" style="margin-top:40px;width:450px;" placeholder="Votre commentaire"/>
+</div>
 
+</section>
 </div>

@@ -1,4 +1,4 @@
-angular.module('app').service('userService',function(){
+angular.module('app').factory('userService',function(){
 var user={
   nom:"Amen Allah Mefteh",
   image:'image.jpg',

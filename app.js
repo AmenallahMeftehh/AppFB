@@ -2,18 +2,18 @@ angular.module('app',['ngRoute']).config(['$routeProvider',function($routeProvid
 $routeProvider
 .when('/login',{
   templateUrl:'pages/login.html',
-    controller:'loginCltr'
+  controller:'userLogin'
 })
 .when('/accueil',{
   templateUrl:'pages/accueil.html',
-    controller:'userController'
+  controller:'userController'
 })
 .when('/profil',{
   templateUrl:'pages/profil.html',
   controller:'userController'
 })
 .otherwise({
-            redirectTo: '/login.'
+    redirectTo: '/login'
           })
 
 }]);
