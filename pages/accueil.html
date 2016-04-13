@@ -47,9 +47,22 @@
 
   <ul>
     <li class="litext1"><a href="#"> <img class="image"src="images\clock.png" alt="" />invitations à un évènement </a></li>
-
     <li class="litext1"><a href="#"> <img class="image"src="images\present.png" alt="" />Anniversaires </a></li>
   </ul>
 </section>
-
+<div class="chatfenetre" ng-controller="ChatController as chatController">
+  <div>
+    <div ng-repeat="message in chatController.messages track by $index">
+      {{message.from}}:{{message.text}}
+    </div>
+  </div>
+  <div>
+    <input type="text" placeholder="ecrivez votre message ici" ng-model="chatController.newMessage">
+    <button ng-click='chatController.sendMessage(chatController.newMessage)'>Envoyer</button>
+    <select ng-model="chatController.sender">
+      <option value="Amen Allah">Amen Allah</option>
+      <option value="Emna">Emna</option>
+    </select>
+  </div>
+</div>
   </div>

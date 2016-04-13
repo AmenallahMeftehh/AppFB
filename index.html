@@ -13,6 +13,7 @@
     <!-- controller -->
     <script src="Controllers\userController.js"></script>
     <script src="Controllers\loginController.js"></script>
+    <script src="Controllers\chatController.js"></script>
     <!-- services -->
     <script src="Services\userService.js"></script>
   </head>
@@ -27,9 +28,9 @@
 
       <li class="litext"><a href="#profil">Profil</a></li>
       <li class="litext"><a href="#accueil">Accueil</a></li>
-      <li><a ui-sref="#"><img src="images/social.png"  /><span >2</span></a></li>
-      <li ><a href="#"><img  src="images/shapes.png" alt="" /><span >8</span></a></li>
-      <li ><a href="#"><img  src="images/circle.png" alt="" /><span >3</span></a></li>
+      <li><a ui-sref="#"><img src="images/social.png"  /><span class="badge">2</span></a></li>
+      <li ><a href="#"><img  src="images/shapes.png" alt="" /><span class="badge">8</span></a></li>
+      <li ><a href="#"><img  src="images/circle.png" alt="" /><span class="badge">3</span></a></li>
       <li ><a href="#"><img src="images/cogwheel.png" alt="" /></a></li>
     </ul>
   </div>
@@ -38,7 +39,6 @@
   <body class="body1">
     <div ng-view>
     </div>
-    
   </body>
 
 </html>

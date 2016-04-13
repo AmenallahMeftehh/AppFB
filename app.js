@@ -1,4 +1,4 @@
-angular.module('app',['ngRoute','angularMoment']).config(['$routeProvider',function($routeProvider){
+angular.module('app',['ngRoute']).config(['$routeProvider',function($routeProvider){
 $routeProvider
 .when('/login',{
   templateUrl:'pages/login.html',
