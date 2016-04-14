@@ -46,14 +46,38 @@
   margin-top: 10px;
   position: relative;
 }
+/*chat*/
+.chat{
+  
+  margin-top: 3em;
+  margin-left: 30px;
+  float: right;
+  margin-right: 16.7em;
+}
 .chatfenetre{
   float: right;
+  padding: 5px;
   margin-bottom: 0px;
-  width: 200px;
-  height: 300px;
+  width: 210px;
+  height: 250px;
   display: block;
   background-color: white;
+  border: 1px groove grey;
+border-radius: 5px;
 }
+.chatdonnees{
+  width: 210px;
+  height: 126px;
+  display: block;
+  padding-top: 5px;
+  float: right;
+  display: block;
+  background-color: white;
+  border: 1px groove grey;
+border-radius: 5px;
+}
+/*fin chat*/
+
 h5{
   color: grey;
   padding-left: 1px;
