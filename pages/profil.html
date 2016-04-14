@@ -1,7 +1,47 @@
-<div><h2 style="margin-left:50px">{{user.nom}}</h2>
-<img class="photo" ng-src="/images/profil/{{user.image}}" alt="" />
+<div class="col-md-12">
+<a class="col-md-6" data-toggle="modal" data-target="#modal-2"><img class="photo img-responsive" ng-src="/images/profil/{{user.image}}"/></a>
+<h2 style="margin-left:50px">{{user.nom}}</h2>
+</div>
+<div class="container">
+  <div class="modal fade" id="modal-2">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" type="button" data-dismiss="modal">&times</button>
+          <h3 class="modal-title">Album</h3>
+        </div>
+        <div class="modal-body col-md-12 ">
+            <img class="imagephotoprofil col-md-6"ng-src="images/profil/{{user.image}}">
+<div class="col-md-6">
+
+  <div  class="chat"ng-controller="ChatController as chatController">
+    <div class="chatfenetreprofil">
+      <div ng-repeat="message in chatController.messages track by $index">
+        {{message.from}}:{{message.text}}
+      </div>
+    </div>
+    <div class="chatdonneesprofil" >
+      <div class="divligne1">
+      </div>
+      <input type="text" class="form-control" placeholder="ecrivez votre message ici" ng-model="chatController.newMessage">
+
+      <select class="form-control" ng-model="chatController.sender">
+        <option value="Amen Allah">Amen Allah</option>
+        <option value="Meriems">Meriem</option>
+      </select>
+      <button style="margin:10px 70px;"class="btn-primary"ng-click='chatController.sendMessage(chatController.newMessage)'>Envoyer</button>
+    </div>
+    </div>
+
 
 </div>
+       </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
 <div class="md-col-12">
  <div class=" md-col-3">
    <div class="photoinfo">
@@ -14,13 +54,27 @@
      <h5>{{user.situation}}</h5>
    </div><br><br><br><br><br><br><br><br><br><br>
   <div class="photoalbum ">
-    <h4><img src="images/technology11.png">Album</img></h4>
+    <h4><a  data-toggle="modal" data-target="#modal-1"><img src="images/technology11.png">Album</img></a></h4>
     <div class="divligne">
     </div>
-    <div class="col-md-4"ng-repeat="i in user.album">
+    <div class="col-md-4 "ng-repeat="i in user.album">
       <img class="imagephoto" ng-src="images/profil/{{i}}">
     </div>
-
+    <div class="container">
+      <div class="modal fade" id="modal-1">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button class="close" type="button" data-dismiss="modal">&times</button>
+              <h3 class="modal-title">Album</h3>
+            </div>
+            <div class="modal-body col-md-4 "ng-repeat="i in user.album">
+                <img class="imagephotomodal"ng-src="images/profil/{{i}}">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
 
@@ -48,7 +102,7 @@
     </ul>
   </div>
 </section><br><br><br><br><br><br><br><br><br><br><br>
-  <div ng-repeat="s in user.statut" >
+  <div class="col-md-12"ng-repeat="s in user.statut" >
     <section class="sectionAcc4">
       {{s}}
       <div class="divligne"></div>

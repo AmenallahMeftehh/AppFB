@@ -10,8 +10,8 @@
   margin-left: 10px;
 }
 .sectionAcc2{
-  margin-left: 30px;
-  float: left;
+  margin-right: 250px;
+  float: right;
   width: 20%;
   height: 304px;
   background-color: #fff;
@@ -22,7 +22,7 @@
 }
 .sectionAcc3{
   margin-top: 3em;
-  margin-left: 30px;
+  margin-right:250px;
   float: right;
   margin-right: 16.7em;
   width: 20%;
@@ -48,22 +48,33 @@
 }
 /*chat*/
 .chat{
-  
+
   margin-top: 3em;
   margin-left: 30px;
   float: right;
-  margin-right: 16.7em;
+  margin-right: 10%;
 }
 .chatfenetre{
   float: right;
   padding: 5px;
   margin-bottom: 0px;
-  width: 210px;
-  height: 250px;
+  width: 20em;
+  height: 20em;
   display: block;
   background-color: white;
   border: 1px groove grey;
 border-radius: 5px;
+}
+.chatfenetreprofil{
+  float: right;
+  padding: 5px;
+  margin-bottom: 0px;
+  width: 25em;
+  height: 25em;
+  display: block;
+  background-color: white;
+  border: 1px groove grey;
+  border-radius: 5px;
 }
 .chatdonnees{
   width: 210px;
@@ -75,6 +86,16 @@ border-radius: 5px;
   background-color: white;
   border: 1px groove grey;
 border-radius: 5px;
+}
+.chatdonneesprofil{
+  width: 25em;
+  height: 126px;
+  display: block;
+  padding-top: 5px;
+  float: right;
+  display: block;
+  background-color: white;
+
 }
 /*fin chat*/
 
@@ -104,8 +125,23 @@ h4{
 }
 .imagephoto{
   width: 100px;
-  height: 100px;
-  margin: 3px;
+  height: 100px
+}
+.imagephotomodal{
+  width: 206px;
+  height: 206px;
+  margin: 5px;
+}
+.imagephotoprofil{
+    width: 486px;
+    height: 486px;
+    border: 1px solid;
+    border-radius: 7px;
+}
+.modal-body{
+  height: 100%;
+  width: 100%;
+  background-color: white;
 }
 .photoalbum{
   width: 360px;
@@ -117,6 +153,7 @@ h4{
   float: left;
   display: block;
   margin-left: 2em;
+
 
 }
 .photoinfo{
