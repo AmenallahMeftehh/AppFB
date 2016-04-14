@@ -7,13 +7,14 @@
   border-style: groove;
   border-width: 1px;
   border-radius: 4px;
-  margin-left: 10px;
+  margin:1em;
 }
 .sectionAcc2{
-  margin-right: 250px;
+  margin-right:13em;
+  margin-top: 1em;
   float: right;
   width: 20%;
-  height: 304px;
+  height: 30%;
   background-color: #fff;
   border-style: groove;
   border-width: 1px;
@@ -21,10 +22,9 @@
 
 }
 .sectionAcc3{
-  margin-top: 3em;
-  margin-right:250px;
+  margin-right:13em;
+  margin-top: 1em;
   float: right;
-  margin-right: 16.7em;
   width: 20%;
   height: 30%;
   background-color: #fff;
@@ -41,36 +41,34 @@
   border-style: groove;
   border-width: 1px;
   border-radius: 4px;
-  margin-left: 400px;
   display: block;
-  margin-top: 10px;
+  margin:1em;
   position: relative;
 }
 /*chat*/
-.chat{
-
-  margin-top: 3em;
-  margin-left: 30px;
+/*.chat{
+  margin-right:13em;
+  margin-top: 1em;
   float: right;
-  margin-right: 10%;
-}
+}*/
 .chatfenetre{
-  float: right;
   padding: 5px;
-  margin-bottom: 0px;
-  width: 20em;
-  height: 20em;
+  width: 19em;
+  height: 14em;
   display: block;
   background-color: white;
   border: 1px groove grey;
-border-radius: 5px;
+  border-radius: 5px;
+  margin-right:13em;
+  margin-top: 0.5em;
+  float: right;
 }
 .chatfenetreprofil{
   float: right;
   padding: 5px;
   margin-bottom: 0px;
   width: 25em;
-  height: 25em;
+  height: 23em;
   display: block;
   background-color: white;
   border: 1px groove grey;
@@ -78,14 +76,14 @@ border-radius: 5px;
 }
 .chatdonnees{
   width: 210px;
-  height: 126px;
-  display: block;
+  height: 106px;
   padding-top: 5px;
-  float: right;
-  display: block;
   background-color: white;
   border: 1px groove grey;
-border-radius: 5px;
+  border-radius: 5px;
+  margin-top: 0.5em;
+  margin-right:13em;
+  float: right;
 }
 .chatdonneesprofil{
   width: 25em;

@@ -50,7 +50,7 @@
     <li class="litext1"><a href="#"> <img class="image"src="images\present.png" alt="" />Anniversaires </a></li>
   </ul>
 </section>
-<div  class="col-md-4 chat"ng-controller="ChatController as chatController">
+<div  ng-controller="ChatController as chatController">
   <div class="chatfenetre">
     <div ng-repeat="message in chatController.messages track by $index">
       {{message.from}}:{{message.text}}
@@ -64,7 +64,7 @@
 
     <select class="form-control" ng-model="chatController.sender">
       <option value="Amen Allah">Amen Allah</option>
-      <option value="Meriems">Meriem</option>
+      <option value="Sel">Selim</option>
     </select>
     <button style="margin:10px 70px;"class="btn-primary"ng-click='chatController.sendMessage(chatController.newMessage)'>Envoyer</button>
   </div>

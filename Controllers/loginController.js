@@ -1,12 +1,11 @@
 angular.module('app').controller('userLogin',function($scope,$location){
-  $scope.login;
-  $scope.password;
-  $scope.sub=function(){
+  $scope.user={login:'admin',password:'amen'};
 
-if($scope.login=='amen'&& $scope.password=='mefteh'){
+  $scope.sub=function(login,password){
+if($scope.user.login==login && $scope.user.password==password){
     $location.path('/accueil');
   }else {
-    alert('login incorrect');
+    alert('login ou/et password incorrect');
   }
 };
 
