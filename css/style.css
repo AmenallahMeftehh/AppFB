@@ -7,7 +7,7 @@
   border-style: groove;
   border-width: 1px;
   border-radius: 4px;
-  margin:1em;
+  margin-left: 2.2em;
 }
 .sectionAcc2{
   margin-right:13em;
@@ -44,6 +44,7 @@
   display: block;
   margin:1em;
   position: relative;
+  margin-left: 30em;
 }
 /*chat*/
 /*.chat{
@@ -67,7 +68,7 @@
   float: right;
   padding: 5px;
   margin-bottom: 0px;
-  width: 25em;
+  width: 28em;
   height: 23em;
   display: block;
   background-color: white;
@@ -99,7 +100,7 @@
 
 h5{
   color: grey;
-  padding-left: 1px;
+  padding-left: 5em;
 
   font-size: 20px;
   font-family: sans-serif;
@@ -258,3 +259,8 @@ margin-left: 15px;
   color:white;
 }
 /*notification*/
+
+.not{
+float: left;
+width:25em;
+height: 5em;}

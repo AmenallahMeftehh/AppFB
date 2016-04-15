@@ -8,7 +8,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <button class="close" type="button" data-dismiss="modal">&times</button>
-          <h3 class="modal-title">Album</h3>
+          <h3 class="modal-title">Photo de profil</h3>
         </div>
         <div class="modal-body col-md-12 ">
             <img class="imagephotoprofil col-md-6"ng-src="images/profil/{{user.image}}">
@@ -36,7 +36,7 @@
         <option value="Amen Allah">Amen Allah</option>
         <option value="Meriems">Meriem</option>
       </select>
-      <button style="margin:10px 70px;"class="btn-primary"ng-click='chatController.sendMessage(chatController.newMessage)'>Envoyer</button>
+      <button style="margin:10px 70px;"class="btn-primary"ng-click='chatController.sendMessage(chatController.newMessage)'>Commenter</button>
     </div>
     </div>
 
@@ -83,11 +83,7 @@
       </div>
     </div>
   </div>
-
-
   </div>
-  <divclass="md-col-6">
-
   <section class="sectionAcc">
     <div >
       <a href="#"><h6>Statut</h6></a>
@@ -109,7 +105,7 @@
     </ul>
   </div>
 </section><br><br><br><br><br><br><br><br><br><br><br>
-  <div class="col-md-12"ng-repeat="s in user.statut" >
+  <div ng-repeat="s in user.statut" >
     <section class="sectionAcc4">
       {{s}}
       <div class="divligne"></div>
