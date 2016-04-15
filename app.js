@@ -13,7 +13,7 @@ $routeProvider
   controller:'userController'
 })
 .otherwise({
-    redirectTo: '/login'
+    redirectTo: '/index'
           })
 
 }]);
